@@ -10,7 +10,14 @@
 	<p id="dados">Dados do carro: </p>
 
 	<script type="text/javascript">
-		
+		var meuCarro = new Object();
+		meuCarro.fabrica = 'Volkswagen';
+		meuCarro.modelo = 'jetta';
+		meuCarro.cor = 'Azul';
+		meuCarro.ano = 2022;
+
+		document.getElementById('dados').innerHTML += meuCarro.fabrica +
+		' - ' + meuCarro.modelo + ' - ' + meuCarro.cor + ' - ' + meuCarro.ano;
 	</script>
 
 </body>
