@@ -12,7 +12,13 @@
 	<p id="teste3">Último item do vetor: </p>
 
 	<script type="text/javascript">
-		
+		// Criando o vetor
+		var cores = ['Verde', 'Amarelo', 'Azul', 'Branco'];
+
+		// Mostrando o resultado
+		document.getElementById('teste1').innerHTML += cores.length;
+		document.getElementById('teste2').innerHTML += cores[0];
+		document.getElementById('teste3').innerHTML += cores[cores.length -1];
 	</script>
 
 </body>
