@@ -10,7 +10,22 @@
 	<p id="teste">A soma de todos os números é: </p>
 
 	<script type="text/javascript">
+		// Criando as variáveis
+		var cont = 1;
+		var total = 0;
+		var numero = 0;
+
+		// Informar ao usuário o que ele preisa fazer
+		alert('Digite 10 números aleatórios');
 		
+		// Criando o laço de repetição
+		for(cont = 1; cont <= 10; cont++){
+			numero = parseInt(prompt('Digite o ' + cont + 'o número',''));
+			total = total + numero;
+		}
+
+		// Mostrando o resultado
+		document.getElementById('teste').innerHTML += total;
 	</script>
 
 </body>

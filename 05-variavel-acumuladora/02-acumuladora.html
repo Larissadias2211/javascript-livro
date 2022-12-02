@@ -10,7 +10,23 @@
 	<p id="teste">O total de vendas foi: </p>
 
 	<script type="text/javascript">
+		// Criando as variáveis
+		var cont = 1;
+		var total = 0;
+		var Venda = 0;
+		var fim = 0;
+
+		// Solicitar ao usuário a quantidade de vendas do dia
+		fim = parseInt(prompt('Digite a quantidade de vendas',''));
 		
+		// Criando o laço de repetição
+		for(cont = 1; cont <= 10; cont++){
+			Venda = parseInt(prompt('Digite o valor da ' + cont + 'o número',''));
+			total = total + Venda;
+		}
+
+		// Mostrando o resultado
+		document.getElementById('teste').innerHTML += total;
 	</script>
 
 </body>
