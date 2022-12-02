@@ -10,7 +10,20 @@
 	<p id="tabuada"></p>
 
 	<script type="text/javascript">
+		// Criando as variáveis
+		var num = 5;
+		var cont = 1;
+		var resposta = '';
 		
+		// Criando a tabuada
+		do{
+			resposta += num + ' X ' + cont + ' = ' + num*cont + '<br />';
+			cont++;
+		}
+		while(cont <= 10);
+
+		// Mostrando a tabuada
+		document.getElementById('tabuada').innerHTML = resposta;
 	</script>
 
 </body>
