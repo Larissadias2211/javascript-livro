@@ -10,18 +10,65 @@
 	<h3>Lógico && (e)</h3>
 
 	<script type="text/javascript">
-		
-	</script>
+		var resposta = true && true;
+		document.write(resposta + '<br />');
 
+		resposta = false && false;
+		document.write(resposta + '<br />');
 
+		var resposta = false && true;
+		document.write(resposta + '<br />');
 
+		var resposta = false && (3 == 4);
+		document.write(resposta + '<br />');
+
+		var resposta = 'Senac' && 'Javascript';
+		document.write(resposta + '<br />');
+
+		var resposta = false && 'Senac';
+		document.write(resposta + '<br />');
+
+		var resposta = 'Senac' && false;
+		document.write(resposta + '<br />');
+       
+		var resposta = '' && false;
+		document.write(resposta + '<br />');
+
+		var resposta = false && '';
+		document.write(resposta + '<br />');
+
+	</script>	
 	
-
 	<h3>Lógico || (ou)</h3>
 
 	<script type="text/javascript">
-		
-	</script>
+		var resposta = true || true;
+		document.write(resposta + '<br />');
 
+		resposta = false || true;
+		document.write(resposta + '<br />');
+
+		resposta = true || false;
+		document.write(resposta + '<br />');
+		
+		resposta = false|| (3 == 4);
+		document.write(resposta + '<br />');
+
+		resposta = 'Senac' || 'javascript';
+		document.write(resposta + '<br />');
+	</script>
+    
+    <h3>Operador ! (not - não)</h3>
+
+	<script type="text/javascript">
+		var resposta = !true;
+		document.write(resposta + '<br />');
+
+		resposta = !false;
+		document.write(resposta + '<br />');
+
+		resposta = !'Senac';
+		document.write(resposta + '<br />');
+	</script>
 </body>
 </html>
