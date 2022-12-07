@@ -10,7 +10,42 @@
 	<p id="teste"></p>
 
 	<script type="text/javascript">
+		// Criando as variáveis
+		var dia = 0;
+		var resposta = '';
+
+		// Solicitando um número para o usuário
+		dia = parseInt(prompt('Digite um número de 1 a 7',''));
 		
+		// Criando o condicional escolha
+		switch(dia){
+			case 1:dia
+			    resposta = 'Domingo';
+				break;
+			case 2:
+			    resposta = 'Segunda';
+				break;
+			case 3:dia
+			    resposta = 'Terça';
+				break;
+			case 4:dia
+			    resposta = 'Quarta';
+				break;
+			case 5:dia
+			    resposta = 'Quinta';
+				break;
+			case 6:dia
+			    resposta = 'Sexta';
+				break;
+			case 7:dia
+			    resposta = 'Sábado';
+				break;
+			default:
+				resposta = 'Dia da semana não existe';							
+		}
+
+		// Mostrando o resultado
+		document.getElementById('teste').innerHTML = resposta;
 	</script>
 </body>
 </html>
