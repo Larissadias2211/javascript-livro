@@ -8,8 +8,23 @@
 <body>
 	<h1>Função com parâmetros</h1>
 	<p id="teste">A soma dos números é: </p>
+    
+	<script src="02-funcao-com-parametros.js">
+		   //Declarando a função
+		   function Soma(a, b){
+		     return a + b;
+	   }
 
-	<script src="02-funcao-com-parametros.js"></script>
+	   // Declarando as variáveis 
+	   var num1 = 0, num2 = 0;
 
+	   // Solicitando os valores para o usuário
+	   num1 = parseInt(promp('Digite um número', ''));
+	   num2 = parseInt(prompt('Digite outro número', ''));
+
+	   // Mostrando o resultado na tela
+	   document.getElementById('teste').innerHTML += Soma(num1, num2);
+	</script>
+	
 </body>
 </html>
