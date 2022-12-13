@@ -21,7 +21,32 @@
 	</main>
 
 	<script type="text/javascript">
-		
+		// Criando a função
+		function chamaDOM(){
+			// Criando as variáveis
+			var tela = '', novaCaixa = '',
+
+			// Obtendo os elementos
+			tela = document.getElementById('principal');;
+			novaCaixa = document.getElementById('caixa');
+
+			// Criando um novo CSS
+			tela.style.fontfamily = 'Arial, sans-serif';
+			tela.style.textAlign = 'center';
+			tela.style.backgroudColor = '#FFFACD';
+			tela.style.padding = '20px';
+			tela.style.width = '40%';
+			tela.style.margin = '0px auto';
+			tela.style.border = '1px solid #CCC';
+			tela.style.bordeRadius = '20px';
+
+			novaCaixa.style.backgroudColor ='#CD853F';
+			novaCaixa.style.padding ='30px';
+			novaCaixa.style.color ='#FFF';
+			novaCaixa.style.width ='300px';
+			novaCaixa.style.margin ='0px auto';
+			novaCaixa.style.textAlign ='center';
+		}     
 	</script>
 </body>
 </html>
